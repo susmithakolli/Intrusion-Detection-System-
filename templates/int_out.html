@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intrusion Detection</title>
+	<style type ="text/css">
+		.container {
+			display: table;
+				}
+		.centered {
+		display: table-cell;
+		height: 550px;
+		width: 1600px;
+		background: LightSteelBlue ;
+		text-align: center;
+		vertical-align: middle;
+			}
+		
+		
+	</style>
+	
+	<script>
+
+function myFunction() {
+    value = {{result}}
+    if (value == 0) {
+        document.getElementById("H2").innerHTML = "Malicious Connection!!";
+        document.getElementById("H2").style.color = "Red";
+    }
+    else{
+    	document.getElementById("H2").innerHTML = "Normal Connection";
+        document.getElementById("H2").style.color = "Green";
+    }
+}
+
+</script>
+</head>
+<body>
+
+<div class="container">
+<div class="centered">
+<h1>Intrusion Detection System<h1>
+<br/>
+
+
+
+<button onclick="myFunction()">Result</button>
+
+
+
+
+<h2 id = "H2"></h2>          
+            
+
+
+
+   
+</div>
+</div>
+
+
+</body>
+</html>
